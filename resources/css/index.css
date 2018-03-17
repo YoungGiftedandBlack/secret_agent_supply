@@ -5,15 +5,36 @@ html {
   font-family: helvetica;
 }
 
-#banner span {
+#banner a {
   font-size: 1rem;
   color: white;
+}
+
+#banner span {
+    padding: 0.75rem 0rem;
 }
 
 header span {
   color: white;
 }
 
+#new_arrivals p, #new_arrivals h1 {
+  color: white;
+  font-family: helvetica;
+  font-weight: bold;
+}
+
+#new_arrivals p {
+  font-size: 1rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+#new_arrivals h1 {
+  font-size: 2rem;
+  padding-left: 3rem;
+}
 /* text css ends here */
 
 /* body css starts here */
@@ -25,7 +46,7 @@ body {
   margin: 0px;
   padding: opx;
   background-color: black;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
 }
 
@@ -34,11 +55,24 @@ body {
   position: relative;
   top: 2.82rem;
   width: 100%;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
 }
 /* new arrivals starts here */
 
 #new_arrivals {
   background-image: url("../../resources/images/moto.jpeg");
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  height: 25rem;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* new arrivals ends here */
@@ -81,6 +115,9 @@ header {
   position: fixed;
   justify-content: flex-start;
   align-items: center;
+  z-index: 2;
+  background-color: black;
+  width: 100%;
 }
 
 .logo {
@@ -90,7 +127,17 @@ header {
 /* header ends here */
 
 /* <1024px starts here */
+
+@media only screen and (max-width: 1024px) and (min-width: 471px) {
+
+}
+
 /* <1024px ends here */
 
 /* <470px starts here */
+
+@media only screen and (max-width: 470px;) {
+
+}
+
 /* <470px ends here */
