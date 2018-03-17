@@ -1,3 +1,72 @@
-body {
-  background-color: azure;
+/* text css starts here */
+
+html {
+  font-size: 18px;
+  font-family: helvetica;
 }
+
+#banner span {
+  font-size: 1rem;
+}
+
+
+/* text css ends here */
+
+/* body css starts here */
+
+body {
+  background-color: black;
+}
+
+/* new arrivals starts here */
+
+#new_arrivals {
+  background-image: url("../../resources/images/moto.jpeg");
+}
+
+/* new arrivals ends here */
+
+/* shop starts here */
+
+.shop {
+  background-color: white;
+  display: flex;
+}
+
+/* shop_window starts here */
+
+#shop_window {
+  border: 4px solid black;
+}
+
+/* shop_window starts here */
+
+/* shop ends here */
+
+/* banner starts here */
+
+#banner {
+  background-color: firebrick;
+}
+
+/* banner ends here */
+
+
+/* body css ends here */
+
+/* header starts here */
+header {
+  display: flex;
+  position: fixed;
+}
+
+.logo {
+  justify-content: flex-start;
+}
+/* header ends here */
+
+/* <1024px starts here */
+/* <1024px ends here */
+
+/* <470px starts here */
+/* <470px ends here */
