@@ -7,6 +7,8 @@ html {
 
 .loc_and_hrs {
   color: white;
+  padding: 1rem 0rem 1rem 2rem;
+  background-color: black;
 }
 
 .co-ordinates, .hours {
@@ -43,6 +45,17 @@ header span {
   font-size: 2rem;
   padding-left: 3rem;
 }
+
+.shop_window span {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0rem;
+}
+
+footer span {
+  color: white;
+}
 /* text css ends here */
 
 /* body css starts here */
@@ -53,7 +66,6 @@ body {
   border: 0px;
   margin: 0px;
   padding: 0px;
-  background-color: black;
   flex-direction: column;
   display: flex;
 }
@@ -100,6 +112,9 @@ nav {
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 4rem 0rem;
 }
 
 /* the_window starts here */
@@ -115,6 +130,13 @@ nav {
 .shop_window {
   border: 4px solid black;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shop_window img {
+  margin: 2rem 0rem;
 }
 
 .window_item {
@@ -123,8 +145,8 @@ nav {
 
 .loc_and_hrs {
   border: 1rem 2rem;
-  width: 35%;
 }
+
 /* shop ends here */
 
 /* banner starts here */
@@ -165,6 +187,14 @@ header {
   flex-direction: row;
 }
 /* header ends here */
+
+/* footer starts here */]
+
+footer {
+  background-color: black;
+}
+
+/* footer ends here */
 
 /* <1024px starts here */
 
