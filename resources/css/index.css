@@ -37,13 +37,6 @@ header span {
 .new_arrivals p {
   font-size: 1rem;
   padding-left: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 0.5rem;
-}
-
-.new_arrivals h1 {
-  font-size: 2rem;
-  padding-left: 3rem;
 }
 
 .shop_window span {
@@ -51,18 +44,27 @@ header span {
   background-color: black;
   color: white;
   padding: 0.5rem 0rem;
+  width: 100%;
 }
 
 footer span {
   color: white;
+  text-align: left;
+  background-color: black;
+}
+
+.promotion p {
+  width: 20rem;
+  background-color: black;
+  margin: 0rem;
 }
 /* text css ends here */
 
 /* body css starts here */
 
 body {
-  width: auto;
-  height: auto;
+  min-width: 100%;
+  height: 100%;
   border: 0px;
   margin: 0px;
   padding: 0px;
@@ -73,7 +75,7 @@ body {
 .the_supply {
   display: flex;
   position: relative;
-  top: 2.82rem;
+  top: 2.32rem;
   width: 100%;
   flex-direction: column;
 }
@@ -87,7 +89,7 @@ nav {
 
 .new_arrivals {
   background-image: url("../../resources/images/moto.jpeg");
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
@@ -101,8 +103,7 @@ nav {
   width: 20rem;
   height: auto;
   margin: 0px;
-  border-top: 9rem;
-  background-color: black;
+  padding: 9rem;
 }
 /* new arrivals ends here */
 
@@ -114,7 +115,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0rem 4rem 0rem;
 }
 
 /* the_window starts here */
@@ -133,14 +133,29 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .shop_window img {
   margin: 2rem 0rem;
+  height: 9rem;
 }
 
 .window_item {
   border: 0.5rem 0rem;
+}
+
+.glasses {
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+
+.glasses img {
+  max-width: 75%;
+  max-height: 75%;
 }
 
 .loc_and_hrs {
@@ -188,9 +203,14 @@ header {
 }
 /* header ends here */
 
-/* footer starts here */]
+/* footer starts here */
 
 footer {
+  display: flex;
+  width: 100%;
+  position: relative;
+  bottom: 0.0rem;
+  padding: 5rem 0rem;
   background-color: black;
 }
 
