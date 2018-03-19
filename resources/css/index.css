@@ -19,6 +19,7 @@ html {
 #banner a {
   font-size: 1rem;
   color: white;
+  text-decoration: none;
 }
 
 #banner span {
@@ -54,11 +55,29 @@ footer span {
   background-color: black;
 }
 
-.promotion p {
+#announcement {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+#the_announced {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+  padding-bottom: 2rem;
+}
+
+#announcement, #the_announced {
   width: 20rem;
   background-color: black;
   margin: 0rem;
 }
+
+  .footer_div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
 /* text css ends here */
 
 /* body css starts here */
@@ -162,10 +181,30 @@ nav {
   border: 1rem 2rem;
 }
 
+.jeez {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
 .browser {
   width: 960px;
   display: flex;
   flex-direction: column;
+}
+
+.MI5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.FBI {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
 }
 
 /* shop ends here */
@@ -213,6 +252,7 @@ header {
 
 footer {
   display: flex;
+  justify-content: center;
   width: 100%;
   position: relative;
   bottom: 0.0rem;
@@ -220,17 +260,20 @@ footer {
   background-color: black;
 }
 
+  .footer_div {
+    width: 960px;
+  }
 /* footer ends here */
 
 /* >1024px starts here */
 
-@media only scree and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
   .nav_element_2 {
     display: none;
   }
 }
 
-/* >1024px starts here */
+/* >1024px ends here */
 
 
 /* <1024px starts here */
@@ -239,19 +282,43 @@ footer {
   .shop_window_3 {
     display: none;
   }
+
   nav {
     width: 85%;
     align-items: center;
     justify-content: center;
   }
+
   .site_container {
     width: 100%;
   }
+
   .browser {
     width: 100%;
   }
+
   .nav_element_1 {
     display: none;
+  }
+
+  .promotion {
+    padding: 9rem 0rem 1.5rem 0rem;
+  }
+
+  .shop_window_1, .shop_window_2 {
+    width: 47%;
+  }
+
+  .shop_window_1 img, .shop_window_2 img {
+    padding: 3rem 0rem;
+  }
+
+  .footer_div {
+    width: inherit;
+  }
+
+  .jeez {
+    width: 35%;
   }
 }
 
@@ -259,8 +326,81 @@ footer {
 
 /* <470px starts here */
 
-@media only screen and (max-width: 470px;) {
+@media only screen and (max-width: 470px) {
+  .shop_window_3, .shop_window_2 {
+    display: none;
+  }
 
+  .shop_window_1 {
+    width: 90%;
+  }
+
+  .jeez {
+    width: 90%;
+  }
+
+  nav {
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav_element_1 {
+    display: none;
+  }
+
+  .browser {
+    width: 100%;
+  }
+
+  .site_container {
+    width: 100%;
+  }
+
+  .promotion {
+    width: 100%;
+    padding: 10rem 0rem 0rem 0rem;
+  }
+
+  .new_arrivals {
+    width: 100%;
+    padding: 0rem;
+    height: 15rem;
+  }
+
+  #announcement, #the_announced {
+  font-family: helvetica;
+  font-weight: bold;
+  padding-left: 2rem;
+  width: inherit;
+  }
+
+  #announcement {
+  font-size: 0.77rem;
+  }
+
+  #the_announced {
+    font-size: 1rem;
+  }
+
+  .MI5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FBI {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loc_and_hrs, .co-ordinates, .hours {
+    border: 0rem;
+  }
+
+  .footer_div {
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
 /* <470px ends here */
