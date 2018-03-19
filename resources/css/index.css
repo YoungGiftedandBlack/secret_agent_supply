@@ -13,6 +13,7 @@ html {
 
 .co-ordinates, .hours {
   color: black;
+  padding-top: 0.5rem;
 }
 
 #banner a {
@@ -39,7 +40,7 @@ header span {
   padding-left: 3rem;
 }
 
-.shop_window span {
+.shop_window_1 span, .shop_window_2 span, .shop_window_3 span {
   text-align: center;
   background-color: black;
   color: white;
@@ -127,7 +128,7 @@ nav {
   display: flex;
 }
 
-.shop_window {
+.shop_window_1, .shop_window_2, .shop_window_3 {
   border: 4px solid black;
   width: 30%;
   display: flex;
@@ -136,7 +137,7 @@ nav {
   align-items: center;
 }
 
-.shop_window img {
+.shop_window_1 img, .shop_window_2 img, .shop_window_3 img {
   margin: 2rem 0rem;
   height: 9rem;
 }
@@ -159,6 +160,12 @@ nav {
 
 .loc_and_hrs {
   border: 1rem 2rem;
+}
+
+.browser {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* shop ends here */
@@ -215,10 +222,37 @@ footer {
 
 /* footer ends here */
 
+/* >1024px starts here */
+
+@media only scree and (min-width: 1025px) {
+  .nav_element_2 {
+    display: none;
+  }
+}
+
+/* >1024px starts here */
+
+
 /* <1024px starts here */
 
 @media only screen and (max-width: 1024px) and (min-width: 471px) {
-
+  .shop_window_3 {
+    display: none;
+  }
+  nav {
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+  }
+  .site_container {
+    width: 100%;
+  }
+  .browser {
+    width: 100%;
+  }
+  .nav_element_1 {
+    display: none;
+  }
 }
 
 /* <1024px ends here */
